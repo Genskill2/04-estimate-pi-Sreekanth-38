@@ -10,7 +10,7 @@ float pi =1.0;
 float num,den;
 for(int i=1; i<=x;i++){
 
-num= 4*i*i;
+num= 4.0*i*i;
 den+=num;
 pi*=num/den;}
 return pi*= 2.0;
