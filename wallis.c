@@ -11,7 +11,7 @@ float num,den;
 for(int i=1; i<=x;i++){
 
 num= 4.0*i*i;
-den+=num;
+den=num-1.0;
 pi*=num/den;}
 return pi*= 2.0;
 }
