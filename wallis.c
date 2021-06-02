@@ -5,7 +5,7 @@
 
 float wallis_pi(int i){
 float p,q;
-p= 4*sq(i);
+p= 4*i*i;
 q=p-1;
 float s=p/q;
 return s;
