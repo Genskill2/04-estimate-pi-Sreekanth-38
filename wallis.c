@@ -3,17 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int x){
-float pi =1.0;
-int i=1;
-float num=2, den =1.0;
-for(i=1; i<=x; i++)
-{
-	pi*=(num/den);
-	((i%2)==1)?(den+=2.0L):(num+=2.0L);
-}
-return pi*= 2.0;
-}
+
 
 
 int main(void) {
@@ -34,4 +24,14 @@ int main(void) {
     }
   }
 }
-
+float wallis_pi(int x){
+float pi =1.0;
+int i=1;
+float num=2, den =1.0;
+for(i=1; i<=x; i++)
+{
+	pi*=(num/den);
+	((i%2)==1)?(den+=2.0L):(num+=2.0L);
+}
+return pi*= 2.0;
+}
